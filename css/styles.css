@@ -1,0 +1,135 @@
+body{
+  background: #F7F7F7;
+  padding: 0;
+  margin: 0;
+  font-family:"Monserrat",sans-serif;
+}
+
+/*GENERAL*/
+.container{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.row{
+  flex-direction: row;
+}
+
+.column{
+  flex-direction: column;
+  align-items: center;
+}
+
+/* NAVBAR */
+nav{
+  padding: 1rem;
+  position: fixed;
+  width: 100%;
+}
+
+.navbar{
+  background: #393E46;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.nav-link{
+  color: #F7F7F7;
+  text-decoration: none;
+}
+
+.nav-link:hover{
+  color: #EEEEEE;
+}
+
+/* HEADER*/
+header{
+  color: grey;
+  font-size: 3rem;
+  font-weight: bold;
+  padding: 6rem 2rem 2rem 2rem;
+}
+
+.data{
+  font-size: 1rem;
+}
+
+
+/* MAIN */
+/* secciones */
+.content{
+  padding: 2rem;
+}
+
+.section-about{
+  background-image: url("../assets/tierra.webp");
+  background-size: cover;
+  color: #EEEEEE;
+  font-size: 2rem;
+}
+
+.shadow{
+  background: rgba(0,0,0,0.5);
+  text-align: center;
+}
+
+.p-about{
+  width: 60%;
+  display: inline-block;
+}
+
+/* SECCION SKILLS*/
+.section-skills{
+  background: #EEEEEE;
+}
+
+.skill{
+  padding: 2rem 0;
+}
+
+.icon{
+  width: 100px;
+  height: 100px;
+}
+
+.progress-bar{
+  width: 80%;
+  height: 1.5rem;
+}
+
+
+/* SECCION PROJECTS*/
+.section-projects{
+  background: #929AAB;
+}
+
+
+
+/* FOOTER */
+footer{
+  padding: 2rem;
+}
+.contact{
+  width: 50%;
+}
+
+.message{
+ padding: 1rem;
+}
+.contact-git{
+  font-size: 2rem;
+  color: black;
+}
+.contact-in{
+  font-size: 2rem;
+  color: #0E76A8;
+}
+.contact-fb{
+  font-size: 2rem;
+  color: #3b5998;
+}
+
+form > label,form > button  {
+  display: block;
+  margin-top: 1.5rem;
+} 

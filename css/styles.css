@@ -1,5 +1,15 @@
+
+:root {
+  --text: #03131e;
+  --background: #f3f5f6;
+  --primary: #393e46;
+  --secondary: #a4b1bc;
+  --accent: #4e5a6a;
+}
+
 body{
   background: #F7F7F7;
+  color: var(--text);
   padding: 0;
   margin: 0;
   font-family:"Monserrat",sans-serif;
@@ -17,20 +27,46 @@ body{
 
 .column{
   flex-direction: column;
+}
+
+.flex-wrap{
+  flex-wrap: wrap;
+}
+
+.justify-content-end{
+  justify-content: flex-end;
+}
+
+.align-items-center{
   align-items: center;
 }
+
+.align-items-end{
+  align-items: flex-end;
+}
+
+.align-items-stretch{
+  align-items: stretch;
+}
+.align-items-flexstart{
+  align-items: flex-start;
+}
+.align-content-flexstart{
+  align-content: flex-star;
+}
+
+
 
 /* NAVBAR */
 nav{
   padding: 1rem;
   position: fixed;
-  width: 100%;
+  z-index: 1;/*se coloca ya que la imagen de proyecto z-index:auto*/
 }
 
 .navbar{
-  background: #393E46;
-  display: flex;
-  justify-content: space-evenly;
+  background: var(--background);
+  border-bottom: 0.5px solid var(--secondary);
 }
 
 .nav-link{
@@ -42,18 +78,77 @@ nav{
   color: #EEEEEE;
 }
 
+.navbar-collapsed{
+  /* width: 100%; */
+}
+
+.navbar-diplayed{
+  display: none;
+}
+
+.navbar-button{
+  width: 15%;
+  border: none;
+}
+
+button:hover{
+  cursor: pointer;
+}
+
+.navbar-image{
+  width: 100%;
+}
+
+
+/* .tooltip {
+  position: absolute;
+  background-color: var(--background);
+  box-sizing: border-box;*//*para que no sobresalga de la caja*/
+/*  padding: 1rem;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+  white-space: nowrap;
+  opacity: 1;
+} */
+
+.anc{
+  display: block;
+  width: 100%;
+}
+
+.nav-link-responsive{
+  color: var(--text);
+  text-decoration: none;
+  margin: 1rem 0;
+
+  width: 80%;
+  text-align: center;
+  padding: 0.5rem;
+  border-radius: 1rem;
+}
+
+.nav-link-responsive:hover{
+  background-color: var(--secondary);
+  color:var(--background);
+}
+
 /* HEADER*/
 header{
-  color: grey;
-  font-size: 3rem;
+  color: var(--accent);
+  font-size: 1.5rem;
   font-weight: bold;
-  padding: 6rem 2rem 2rem 2rem;
+  padding: 6rem 1rem 2rem 1rem;
 }
 
 .data{
-  font-size: 1rem;
+  font-size: 0.75rem;
 }
 
+#json{
+  overflow: auto;
+  white-space: pre-wrap;
+}
 
 /* MAIN */
 /* secciones */
@@ -76,37 +171,83 @@ header{
 .p-about{
   width: 60%;
   display: inline-block;
+  word-wrap: break-word;
 }
 
 /* SECCION SKILLS*/
+
+.skills-title{
+  font-size: 1rem;
+}
+
+
+.skills-section-subtitles{
+  margin-bottom: 0;
+}
+
+.skill-text{
+  display: inline-block;
+  margin: 1rem 0;
+  text-align: center;
+  font-weight: bold;
+}
+
 .section-skills{
   background: #EEEEEE;
 }
 
+.specialty{
+  width: 100%;
+}
+
 .skill{
+  width: 50%;
   padding: 2rem 0;
 }
 
 .icon{
-  width: 100px;
-  height: 100px;
+  width: 30%;
 }
 
-.progress-bar{
-  width: 80%;
-  height: 1.5rem;
-}
 
 
 /* SECCION PROJECTS*/
 .section-projects{
-  background: #929AAB;
+  background: var(--accent);
+  color: var(--background);
 }
 
+.card{
+  width: 100%;
+  border-radius: 1rem;
+  margin: 1rem 0;
+  background-color: white;
+  overflow: hidden;/*para ocultar lo que sobresale del contenedor*/
+}
 
+.card-image{
+  opacity: 0.5;
+  background-size: cover;
+  padding: 1rem 1rem;
+  color: #EEEEEE;
+  z-index: 0;
+}
+
+.card-description{
+  padding: 1rem 1rem;
+}
+
+.icon-projects{
+  width: 8%;
+}
+
+.project-icons{
+  margin-top: 1rem;
+}
 
 /* FOOTER */
 footer{
+  background-color: var(--primary);
   padding: 2rem;
 }
 .contact{
@@ -116,20 +257,77 @@ footer{
 .message{
  padding: 1rem;
 }
-.contact-git{
-  font-size: 2rem;
-  color: black;
-}
-.contact-in{
-  font-size: 2rem;
-  color: #0E76A8;
-}
-.contact-fb{
-  font-size: 2rem;
-  color: #3b5998;
-}
 
 form > label,form > button  {
   display: block;
   margin-top: 1.5rem;
 } 
+
+.contact-img > img{
+  width: 20%;
+}
+
+
+
+/* MEDIA QUERYS*/
+
+@media screen and (min-width:480px) {/*tablet*/
+  body{
+    background-color: purple;
+  }
+
+  
+  /* NAVBAR*/
+  .navbar-collapsed{
+    display: none;
+  }
+
+  .navbar-diplayed{
+    display: block;
+  }
+
+  /* HEADER*/
+  header{
+    color: var(--accent);
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 6rem 2rem 2rem 2rem;
+  }
+
+  .data{
+    font-size: 1rem;
+  }
+
+  #json{
+    overflow: auto;
+    white-space: pre-wrap;
+  }
+
+
+  /* SECCION SKILLS*/
+
+  .skill{
+    width: 30%;
+  }
+
+  .specialty{
+    width: 50%;
+  }
+
+  /* SECCION PROYECTOS*/
+  .card{
+    width: 45%;
+  }
+
+}
+
+
+@media screen and (min-width:1400px) {/*escritorio*/
+  body{
+    background-color: green;
+  }
+
+  .skill{
+    width: 15%;
+  }
+}

@@ -17,24 +17,30 @@
   <title>Portafolio Carlos Zarate</title>
 </head>
 <body>
-  <nav class="navbar">
-    <a href="#about" class="nav-link">Sobre mi</a>
-    <a href="#skills" class="nav-link">Habilidades</a>
-    <a href="#projects" class="nav-link">Proyectos</a>
-    <a href="#certificates" class="nav-link">Certificados</a>
-    <a href="#contact" class="nav-link">Contacto</a>
+  <nav class="navbar" id="navbar">
+    <div class="container row navbar-collapsed justify-content-end">
+      <button class="navbar-button">
+        <img class="navbar-image" src="./assets/night-moon.svg" alt="">
+      </button>
+      <button class="navbar-button" id="menu-button">
+        <img class="navbar-image" src="./assets/menu-black.svg" alt="">
+      </button>
+    </div>
+    <div class="navbar-diplayed">
+      <a href="#about" class="nav-link">Sobre mi</a>
+      <a href="#skills" class="nav-link">Habilidades</a>
+      <a href="#projects" class="nav-link">Proyectos</a>
+      <a href="#contact" class="nav-link">Contacto</a>
+    </div>
   </nav>
 
   <header>
+
     <code>
-      &ltProgramación Web&#47&#62
+      &ltHola Mundo&#47&#62
       <br>
       <code class="data">
-        <pre>
-        {
-          name:'Carlos Manuel',
-          surname:'Zarate La Cruz'
-        }
+        <pre id="json">
         </pre>
       </code>
     </code>
@@ -49,128 +55,202 @@
         </section>
       </div>
     </section>
-    <section class="content section-skills" id="skills">
-      <h2>Tecnologias/Habilidades</h2>
-      <div class="container">
 
-        <div class="skill container column">
-          <img class="icon html" src="./assets/html5-brands.svg" alt="HTML"></img>
-          <label for="">HMTL</label>
-          <progress class="progress-bar" max="100" value="55"></progress>
+    <section class="content section-skills" id="skills">
+      <h2 class="skills-title">Tecnologias/Habilidades</h2>
+      <div  class="container row align-items-flexstart flex-wrap">
+
+        <div class="container column specialty">
+          <h3 class="skills-section-subtitles">Frontend</h3>
+          <div class="container flex-wrap">
+
+            <div class="skill container column align-items-center">
+              <img class="icon" src="./assets/figma-color.svg" alt=""></img>
+              <label class="skill-text">FIGMA
+                <br>Básico
+              </label>
+            </div>
+            <div class="skill container column align-items-center">
+              <img class="icon" src="./assets/html-5-color.svg" alt=""></img>
+              <label class="skill-text">HTML
+                <br>Básico | Medio
+              </label>
+            </div>
+            <div class="skill container column align-items-center">
+              <img class="icon" src="./assets/css-3-color.svg" alt=""></img>
+              <label class="skill-text">CSS
+                <br>Básico | Medio
+              </label>
+            </div>
+            <div class="skill container column align-items-center">
+              <img class="icon" src="./assets/javascript-color.svg" alt=""></img>
+              <label class="skill-text">Javascript
+                <br>Básico | Medio
+              </label>
+            </div>
+            <div class="skill container column align-items-center">
+              <img class="icon" src="./assets/bootstrap-color.svg" alt=""></img>
+              <label class="skill-text">Bootstrap
+                <br>Básico
+              </label>
+            </div>
+            <div class="skill container column align-items-center">
+              <img class="icon" src="./assets/angular-color.svg" alt=""></img>
+              <label class="skill-text">Angular
+                <br>Básico
+              </label>
+            </div>
+            
+          </div>
         </div>
-        <div class="skill container column">
-          <img class="icon" src="./assets/css3-alt-brands.svg" alt=""></img>
-          <label for="">CSS</label>
-          <progress class="progress-bar" max="100" value="45"></progress>
+
+        <div class="container column specialty">
+          <h3 class="skills-section-subtitles">Backend</h3>
+          <div class="container flex-wrap">
+
+            <div class="skill container column align-items-center">
+              <img class="icon" src="./assets/java-color.svg" alt=""></img>
+              <label class="skill-text">FIGMA
+                <br>Básico
+              </label>
+            </div>
+            <div class="skill container column align-items-center">
+              <img class="icon" src="./assets/springboot-color.svg" alt=""></img>
+              <label class="skill-text">HTML
+                <br>Básico | Medio
+              </label>
+            </div>
+            
+          </div>
         </div>
-        <div class="skill container column">
-          <img class="icon" src="./assets/js-brands.svg" alt=""></img>
-          <label for="">JavaScript</label>
-          <progress class="progress-bar" max="100" value="65"></progress>
+
+        <div class="container column specialty">
+          <h3 class="skills-section-subtitles">Bases de Datos</h3>
+          <div class="container flex-wrap">
+
+            <div class="skill container column align-items-center">
+              <img class="icon" src="./assets/mysql-color.svg" alt=""></img>
+              <label class="skill-text">MySQL
+                <br>Básico
+              </label>
+            </div>
+            <div class="skill container column align-items-center">
+              <img class="icon" src="./assets/oracle-color.svg" alt=""></img>
+              <label class="skill-text">Oracle
+                <br>Básico
+              </label>
+            </div>
+            <div class="skill container column align-items-center">
+              <img class="icon" src="./assets/microsoft-sql-server-color.svg" alt=""></img>
+              <label class="skill-text">SQLServer
+                <br>Básico
+              </label>
+            </div>
+            <div class="skill container column align-items-center">
+              <img class="icon" src="./assets/mongo-color.svg" alt=""></img>
+              <label class="skill-text">MongoDB
+                <br>Básico
+              </label>
+            </div>
+            
+          </div>
+
         </div>
-        <div class="skill container column">
-          <img class="icon" src="./assets/git-alt-brands.svg" alt=""></img>
-          <label for="">GIT</label>
-          <progress class="progress-bar" max="100" value="35"></progress>
+
+        <div class="container column specialty">
+          <h3 class="skills-section-subtitles">Otros</h3>
+          <div class="container flex-wrap">
+
+            <div class="skill container column align-items-center">
+              <img class="icon" src="./assets/git-color.svg" alt=""></img>
+              <label class="skill-text">Git
+                <br>Básico
+              </label>
+            </div>
+            <div class="skill container column align-items-center">
+              <img class="icon" src="./assets/github-color.svg" alt=""></img>
+              <label class="skill-text">Github
+                <br>Básico
+              </label>
+            </div>
+            <div class="skill container column align-items-center">
+              <img class="icon" src="./assets/jira-color.svg" alt=""></img>
+              <label class="skill-text">Jira
+                <br>Básico
+              </label>
+            </div>
+            <div class="skill container column align-items-center">
+              <img class="icon" src="./assets/docker-color.svg" alt=""></img>
+              <label class="skill-text">Docker
+                <br>Básico
+              </label>
+            </div>
+            
+          </div>
         </div>
-      </div>
-      <div class="container">
-        <div class="skill container column">
-          <img class="icon" src="./assets/bootstrap-brands.svg" alt=""></img>
-          <label for="">Bootstrap</label>
-          <progress class="progress-bar" max="100" value="50"></progress>
-        </div>
-        <div class="skill container column">
-          <img class="icon" src="./assets/angular-brands.svg" alt=""></img>
-          <label for="">Angular</label>
-          <progress class="progress-bar" max="100" value="70"></progress>
-        </div>
-        <div class="skill container column">
-          <img class="icon" src="./assets/mysql-sq.svg" alt=""></img>
-          <label for="">MySQL</label>
-          <progress class="progress-bar" max="100" value="40"></progress>
-        </div>
-        <div class="skill container column">
-          <img class="icon" src="./assets/brand_mongodb_icon_157872.svg" alt=""></img>
-          <label for="">MongoDB</label>
-          <progress class="progress-bar" max="100" value="40"></progress>
-        </div>
-        
       </div>
 
     </section>
+
     <section class="content section-projects" id="projects">
       <h2>Algunos Proyectos</h2>
-      <div class="container">
-        <div class="row">
-          <div class="card">
-            <div class="card-image">
-              <img src="" alt="">
-            </div>
-            <div class="card-description">
+      <div class="container row flex-wrap align-items-flexstart">
 
-            </div>
+        <div class="container column card">
+          <div class="card-image" id="proyect-1">
+            <p>Proyecos de Consultoria</p>
+            <!-- <img src="./assets/mysql-sq.svg" alt=""> -->
           </div>
-          <div class="card">
-            <div class="card-image">
-              <img src="" alt="">
+          
+          <div class="container column card-description">
+            <label>tecnologias usadas</label>
+            <div class="container row flex-wrap project-icons">
+              <img class="icon-projects" src="./assets/springboot.svg" alt=""></img>
+              <img class="icon-projects" src="./assets/springboot.svg" alt=""></img>
+              <img class="icon-projects" src="./assets/springboot.svg" alt=""></img>
+              <img class="icon-projects" src="./assets/springboot.svg" alt=""></img>
             </div>
-            <div class="card-description">
 
-            </div>
-          </div>
-          <div class="card">
-            <div class="card-image">
-              <img src="" alt="">
-            </div>
-            <div class="card-description">
-
-            </div>
           </div>
         </div>
-        <div class="row">
-          <div class="card">
-            <div class="card-image">
-              <img src="" alt="">
-            </div>
-            <div class="card-description">
 
-            </div>
+        <div class="card">
+          <div class="card-image" id="proyect-2">
+            <!-- <img src="./assets/mysql-sq.svg" alt=""> -->
           </div>
-          <div class="card">
-            <div class="card-image">
-              <img src="" alt="">
-            </div>
-            <div class="card-description">
+          <div class="card-description">
 
-            </div>
-          </div>
-          <div class="card">
-            <div class="card-image">
-              <img src="" alt="">
-            </div>
-            <div class="card-description">
-
-            </div>
           </div>
         </div>
+
+        <div class="card">
+          <div class="card-image" id="proyect-3">
+            <!-- <img src="/assets/tierra.webp" alt=""> -->
+          </div>
+          <div class="card-description">
+
+          </div>
+        </div>
+
+
       </div>
     </section>
     <section class="content" id="certificates">
 
     </section>
   </main>
+
   <footer id="contact">
     <h2>Contáctame</h2>
     <div class="container">
       <div class="contact social container column">
-        <a href="https://github.com/CManuelZarate" class="contact-git" target="_blank">
-          <i class="fab fa-github"></i>
+        <a href="https://github.com/CManuelZarate" class="contact-img" target="_blank">
+          <img src="./assets/github-color.svg" alt="">
         </a>
-        <a href="https://www.linkedin.com/in/carlos-manuel-zarate-la-cruz-893839211/" class="contact-in" target="_blank">
-          <i class="fab fa-linkedin"></i>
+        <a href="https://www.linkedin.com/in/carlos-manuel-zarate-la-cruz-893839211/" class="contact-img" target="_blank">
+          <img src="./assets/linkedin-color.svg" alt="">
         </a>
-        <a href="https://www.facebook.com/manuel.zaratelacruz" class="contact-fb" target="_blank">
+        <a href="https://www.facebook.com/manuel.zaratelacruz" class="contact-img" target="_blank">
           <i class="fab fa-facebook"></i>
         </a>
       </div>
@@ -185,5 +265,147 @@
       </div>
     </div>
   </footer>
+  
+
+  
+
+  <script>
+    //animacion del scrool
+
+    function assignScrollAnimation () {
+    const navbarLinks = document.querySelectorAll("#navbar a");
+
+      navbarLinks.forEach(function(link) {
+        link.addEventListener("click", function(event) {
+          event.preventDefault(); // Evita el comportamiento predeterminado del enlace
+
+          const targetId = this.getAttribute("href"); // Obtiene el ID del destino del enlace
+          const targetElement = document.querySelector(targetId); // Busca el elemento destino en la página
+
+          if (targetElement) {
+            // Si se encuentra el elemento destino, realiza el desplazamiento suave
+            window.scrollTo({
+              top: targetElement.offsetTop,
+              behavior: "smooth", // Desplazamiento suave
+              // Ajusta la velocidad de la animación modificando la duración en milisegundos
+              // Cuanto menor sea el valor, más rápida será la animación
+              duration: 1000 // Por ejemplo, aquí ajustamos la duración a 1 segundo
+            });
+          }
+        });
+      });
+    }
+
+    
+
+    /*Navbar*/
+    let menuButton = document.getElementById("menu-button");
+    menuButton.addEventListener("click",displayMenu);
+
+
+    function displayMenu(){
+
+      let navbar = document.getElementById("navbar");
+      let cajaAncho = navbar.offsetWidth;
+      let cajaLargo = navbar.offsetHeight;
+      console.log("el largo ",cajaLargo);
+      
+      let tooltip = document.getElementById("tooltip");
+      if( tooltip ){
+        tooltip.remove();
+        return;
+      }
+      
+      let navbarDisplayHtml=`
+      
+        <div class="tooltip anc" style="top:${cajaLargo}px;" id="tooltip">
+          <div class="container column align-items-center">
+          <a href="#about" class="nav-link-responsive">Sobre mi</a>
+          <a href="#skills" class="nav-link-responsive">Habilidades</a>
+          <a href="#projects" class="nav-link-responsive">Proyectos</a>
+          <a href="#contact" class="nav-link-responsive">Contacto</a>
+          </div>
+        </div>
+      `;
+
+      navbar.insertAdjacentHTML('beforeend',navbarDisplayHtml);
+      
+      tooltip = document.getElementById("tooltip");
+      tooltip.style.top=cajaLargo;
+      
+      //actualizamos posicion del tooltip
+      let linksResponsive = document.getElementsByClassName("nav-link-responsive");
+      
+
+      //a cada enlace establecemos listener
+      //document.addEventListener("DOMContentLoaded",assignScrollAnimation );
+      assignScrollAnimation();
+
+      //eliminamo el tooltip
+      for( let i=0 ;i<linksResponsive.length;i++ ){
+        linksResponsive[i].addEventListener("click",displayMenu);
+      }
+      
+      
+
+    }
+
+    //
+    function updateposition(){
+      let navbar = document.getElementById("navbar");
+      let cajaAncho = navbar.offsetWidth;
+      let cajaLargo = navbar.offsetHeight;
+
+      tooltip = document.getElementById("tooltip");
+      tooltip.style.top=cajaLargo;
+    }
+
+    /**/
+    let projectImages = document.getElementsByClassName('card-image');
+
+    let otro = document.getElementById('proyect-1');
+    console.log(otro);
+    console.log(otro.style);
+    console.log(projectImages);
+
+    for( let i=0 ;i<projectImages.length;i++ ){
+      console.log("----");
+      console.log(projectImages[i].style);
+      projectImages[i].style.backgroundImage= "url('../assets/tierra.webp')"
+    }
+
+    console.log(projectImages);
+
+
+    const jsonData = `
+{
+  "name": "Carlos Manuel",
+  "surname": "Zarate La Cruz",
+  "email": "camazala@gmail.com",
+  "education": "Estudiante de Programación Web",
+  "university": "Universidad XYZ",
+  "year": "2do año",
+  "interests": ["Desarrollo web", "JavaScript", "HTML", "CSS"]
+}`;
+
+    let index = 0;
+    let text = '';
+    let intervalId = null;
+
+    function writeText() {
+      text = jsonData.slice(0, index);
+      document.getElementById('json').innerText = text;
+      index++;
+
+      if (index > jsonData.length) {
+        clearInterval(intervalId);
+      }
+    }
+
+    intervalId = setInterval(writeText, 80);
+
+
+
+  </script>
 </body>
 </html>
